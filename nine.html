@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lv.1</title>
+</head>
+<body>
+    <script>
+        var str = "so so sorry"
+        function changeFirstLetter(){
+            var array = str.toLowerCase().split(" ")
+            for(var i =0 ;i < array.length; i++){
+                array[i]=array[i][0].toUpperCase()+array[i].substring(1,array[i].length)
+            }
+            var string = array.join(" ")
+            return string
+        }
+        var resultStr = changeFirstLetter(str)
+     function titleize(str){
+         
+         return str.toLowerCase().replace(/(?:^|\s)\w/g,function(c){
+             return c.toUpperCase()
+         })
+     }
+     var resultStr2 = titleize(str)
+     console.log(resultStr2)  
+
+    </script>
+</body>
+<html>
