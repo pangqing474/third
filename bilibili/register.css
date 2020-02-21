@@ -1,0 +1,583 @@
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select
+{
+    padding: 0px; margin: 0px; font-family: arial;}
+    li{list-style: none;}
+    a{text-decoration: none;}
+
+.top {
+    width:100%;
+    height: 57px;
+    position: relative;   
+}
+.top li{
+    list-style: none;
+    float: left;
+    padding-left: 13px;
+    padding-top: 16px;
+    line-height: 24px;
+    font-size: 14px;
+    position: relative;
+    left: 34px;
+}
+.top a {
+    text-decoration: none;
+    color: black;
+}
+.top a:hover{
+    color: #02baed;
+}
+.top .bili {
+    width: 86px;
+    height: 46px;
+    position: absolute;
+    top:5px;
+    left:15px;
+}
+.phone {
+    height: 25px;
+    width: 20px;
+}
+.main li {
+    position: relative;
+    left: 98px;
+}
+.search {
+    position: relative;
+    left: 124px;
+    top:12px;
+    width: 480px;
+    height:35px ;
+    border-radius: 2px;
+    border:solid 1px;
+    border-color: #e7e7e7;
+    color: #757575;
+    line-height: 26px;
+    font-size: 15px;
+    padding-left: 18px;
+    background-color: #f4f4f4;
+    outline: none;
+    
+}
+.search_img {
+    width: 46px;
+    height: 35px;
+    position: absolute;
+    top: 12px;
+    left: 1077px;
+    border-radius: 0 2px 2px 0;
+}
+.enter {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 1160px;
+    border-style: solid;
+    border-color: #e7e7e7;
+    cursor: pointer;
+}
+.enter_all {
+    float:right;
+    position: absolute;
+    top:0px;
+    left: 1150px;
+}
+.loading {
+    display: none;
+    width: 370px;
+    height: 390px;
+    background-color: white;
+    position: absolute;
+    left: -180px;
+    top: 50px;
+    z-index: 9000;
+    border-radius: 5px;
+    border:1px solid rgb(238, 237, 237);
+    
+}
+.loading p {
+    position: relative;
+    left: 20px;
+    top: -20px;
+}
+.danmu_bg {
+    width: 330px;
+    height: 200px;
+    position: relative;
+    left: 20px;
+    top: -10px;
+}
+.danmu{
+    overflow: hidden;
+    width: 330px;
+    height: 200px;
+   margin: auto;
+   position: absolute;
+   top: 50px;
+   left: 22px;
+}
+.danmu1,.danmu2{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-duration: 5s;
+}
+.danmu1{
+   animation-name: roll1;
+}
+.danmu2{
+   animation-name: roll2;
+}
+@keyframes roll1{
+   0%{right: 0px; top: 0px;}
+   100%{right: 100%; top: 0px;}
+}
+@keyframes roll2{
+   0%{right: -100%; top: 0px;}
+   100%{right: 0px; top: 0px;}
+}
+.register {
+    position: relative;
+    left: 20px;
+    top: 0px;
+    height: 40px;
+    width: 160px;
+    color: #02baed;
+    border:1px solid #02baed;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+.signup {
+    position: relative;
+    left: 28px;
+    top: 0px;
+    height: 40px;
+    width: 160px;
+    color: white;
+    border:1px solid #04addb;
+    outline: none;
+    background-color:#04addb;
+    cursor: pointer;
+}
+.signup:hover {
+    background-color: #02baed;
+}
+.lan_line {
+    width: 370px;
+    position: relative;
+    top:10px;
+}
+.lan_img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 14px;
+    left: -20px;
+    z-index: 9999;
+}
+.lan_li1 {
+    float: left;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+.lan_li1:hover {
+    background-color: rgb(235, 235, 235);
+}
+.lan {
+    display: none;
+    width: 238px;
+    height: 80px;
+    position: absolute;
+    left: -264px;
+    top: -5px;
+    background-color: white;
+    border-radius: 2px;
+    border:1px solid rgb(238, 237, 237);
+}
+.lan ul {
+    width: 230px;
+}
+.lan li {
+    width: 220px;
+    position: relative;
+    top: -4px;
+    left: 0px;
+}
+.lan li:hover {
+    background-color:  rgb(235, 235, 235);
+}
+.lan a {
+    color: black;
+}
+.lan a:hover {
+    color: black;
+    background-color: rgb(235, 235, 235);
+}
+.loading li:hover .lan {
+    display: block;
+}
+.enter_all li:hover .loading {
+    display: block;
+}
+.tri{
+    width:0px;
+    height:0px;
+    border: 18px solid;
+    border-color:transparent transparent white transparent;
+    position: relative;
+    top: -30px;
+    left: 178px;
+}
+.btn {
+    width: 100px;
+    height: 35px;
+    background-color: #fb7299;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    top: -5px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.img {
+    background: url(img/load_img.png);
+    height: 104px;
+    width: 100%;
+}
+.tlt {
+    position: absolute;
+    top: 164px;
+    left: 663px;
+    font-size: 38px;
+    color: #000;
+}
+
+.linea1 {
+    position: relative;
+    top: 20px;
+    left: 200px;
+    width: 452px;
+}
+.linea2{
+    position: relative;
+    width: 452px;
+    top: 20px;
+    left: 294px;
+}
+
+.user {
+    position: relative;
+    top: 100px;
+    left: 495px;
+    width: 409px;
+    height: 38px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: none;
+    outline: none;
+    padding-left: 10px;
+}
+.user:hover,.keys:hover,.num:hover,.verify:hover {
+    border: 1px solid #C6C4C4; 
+}
+.keys {
+    position: relative;
+    top: 180px;
+    left: 69px;
+    width: 409px;
+    height: 38px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: none;
+    outline: none;
+    padding-left: 10px;
+}
+.option{
+      margin: 100px;
+     width: 128px;
+      height: 38px;
+      border-radius: 5px 0 0 5px;
+      border: 1px solid rgb(219, 219, 219);
+      position: relative;
+      top: 120px;
+      left: 395px;
+    }
+    .option select{
+    border: none;
+    outline: none;
+    width: 100%;
+      height: 38px;
+      line-height: 38px;
+    appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    padding-left: 20px;
+    color: rgb(161, 161, 161);
+    }
+    .option:after{
+        content: "";
+        width: 13px;
+        height: 10px;
+        background: url(img/arrow_down.png) no-repeat center;
+      position: absolute;
+      left: 104px;
+      top: 12px;
+      pointer-events: none;
+      }
+      .num {
+        position: relative;
+        top: -20px;
+        left: 624px;
+        width: 281px;
+        height: 38px;
+        border-radius: 0 5px 5px 0;
+        display: inline-block;
+        border: 1px solid rgb(219, 219, 219);
+        box-shadow: none;
+        outline: none;
+        padding-left: 10px;
+      }
+.verify {
+        position: relative;
+        top: 60px;
+        left: 197px;
+        width: 409px;
+        height: 38px;
+        border-radius:5px;
+        display: inline-block;
+        border: 1px solid rgb(219, 219, 219);
+        box-shadow: none;
+        outline: none;
+        padding-left: 10px;
+      }
+.get {
+          position: relative;
+          top: 61px;
+          left: 54px;
+          width: 137px;
+          height: 37px;
+          background-color: #01a3cf;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          cursor: pointer;
+      }
+.get:hover {
+    background-color: #02baed;
+}
+
+input[type=checkbox] {
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 15px;
+    height: 12px;
+    position: relative;
+
+  }
+  
+  input[type=checkbox]:after {
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    top: 0;
+    content: " ";
+    background: url(img/checkbox2.png);
+    color: black;
+    display: inline-block;
+    visibility: visible;
+    padding: 0px 3px;
+    border-radius: 3px;
+  }
+  
+  input[type=checkbox]:checked:after {
+    content: url(img/checkboxa.png);
+    font-size: 12px;
+  }
+  #checkbox {
+      position: relative;
+      top: 100px;
+      left: -370px;
+  }
+  .check_t {
+      font-size: 12px;
+      position: relative;
+      top: 100px;
+      left: -370px;
+  }
+  .center a {
+      color: #02baed;
+  }
+  .reg {
+      height: 38px;
+      width: 416px;
+      position: relative;
+      top: 100px;
+      left: 498px;
+      border-radius: 2px;
+      background-color: #01a3cf;
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }
+  .reg:hover {
+     background-color: #02baed;
+  }
+  .reg_a {
+      font-size: 12px;
+      position: relative;
+      top: 140px;
+      left: 375px;
+  }
+
+  .botton {
+    background-color: #f6f9fa;
+    height: 340px;
+    position: relative;
+    top: 250px;
+}
+.botton_t {
+    height: 140px;
+}
+.b_left {
+    height: 140px;
+    width: 520px;
+    float: left;
+}
+.b_left p {
+    color: #757575;
+    position: relative;
+    left: 120px;
+    top: 20px;
+}
+.b_left ul {
+    width: 400px;
+}
+.b_left li {
+    float: left;
+    position: relative;
+    left: 120px;
+    top: 30px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+.b_left a {
+    color: black;
+}
+.b_left a:hover {
+    color: #02baed;
+}
+.b_line1 {
+    height: 118px;
+    position: relative;
+    left: 138px;
+}
+.b_center {
+    height: 140px;
+    width: 440px;
+    float: left;
+}
+.b_center p {
+    color: #757575;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    font-size: 15px;
+}
+.b_center ul {
+    width: 400px;
+}
+.b_center li {
+    float: left;
+    font-size: 14px;
+    position: relative;
+    top: 24px;
+    left: 40px;
+    padding-top: 10px;
+    padding-right: 30px;
+    width: 100px;
+}
+.b_center a {
+    color: black;
+}
+.b_center a:hover {
+    color: #02baed;
+}
+.b_line2 {
+    height: 118px;
+    position: relative;
+    left: 48px;
+}
+.b_right {
+    float: left;
+    height: 140px;
+}
+.b_right ul {
+    width: 258px;
+}
+.b_right li {
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 86px;
+} 
+.b1 {
+    height: 75px;
+    width: 60px;
+}
+.b_right a {
+    color: black;
+    font-size: 14px;
+}
+.b_right a:hover {
+    color: #02baed;
+}
+.b_add {
+    width: 222px;
+    height: 200px;
+    float: left;
+}
+.b_ad {
+    width: 102px;
+    height: 120px;
+    position: relative;
+    left: 120px;
+    top: 10px;
+}
+#obj {
+  position: relative;
+  top: 56px;
+  left: 13px;
+}
+.b_adr {
+    float: left;
+    height: 200px;
+}
+.b_adr p {
+    font-size: 12px;
+    color: #757575;
+    padding-top: 11px;
+    padding-left: 10px;
+    position: relative;
+    top: 10px;
+}
+.b_adr a {
+  color: #757575;
+}
+.b_adr a:hover {
+    color: #000;
+}
